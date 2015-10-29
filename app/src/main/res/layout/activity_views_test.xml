@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.netease.lcd.lcdtestcases.cases.view.ViewsTest">
+
+
+    <LinearLayout
+        android:id="@+id/actionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        >
+
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:background="#008888"
+            />
+
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:background="#33b5e5"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="offset top and bottom"
+        />
+
+    <Button
+        android:id="@+id/action1"
+        android:layout_above="@id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="animation"
+        />
+
+</RelativeLayout>

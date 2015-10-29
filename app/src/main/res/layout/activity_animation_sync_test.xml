@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.netease.lcd.lcdtestcases.cases.animation.AnimationSyncTest">
+
+    <View
+        android:id="@+id/blue_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff33b5e5"
+        />
+
+    <View
+        android:id="@+id/green_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff99cc00" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/start_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START ANIMATION"
+            android:layout_alignParentBottom="true"
+            />
+
+        <com.netease.lcd.lcdtestcases.widget.DialpadKey
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialpad_key_background"
+            custom:number="2"
+            custom:letters="ABC"
+            />
+
+        <com.netease.lcd.lcdtestcases.widget.DialpadKey
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_toLeftOf="@id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialpad_key_background"
+            custom:number="2"
+            custom:letters="PQRS"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

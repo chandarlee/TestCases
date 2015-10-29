@@ -1,0 +1,12 @@
+<!-- TODO: Update blank fragment layout -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#ff33b5e5"
+    />
+
+

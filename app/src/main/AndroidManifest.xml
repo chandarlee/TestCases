@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.netease.lcd.lcdtestcases" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomAppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cases.ConcurrentTest"
+            android:label="@string/title_activity_concurrent_test" >
+        </activity>
+        <activity
+            android:name=".cases.service.StopServiceTest"
+            android:label="@string/title_activity_stop_service_test" >
+        </activity>
+
+        <service
+            android:name=".cases.service.MyService"
+            android:exported="false" />
+
+        <activity
+            android:name=".cases.bitmap.InBitmapTest"
+            android:label="@string/title_activity_in_bitmap_test" >
+        </activity>
+
+        <service
+            android:name=".cases.binder.RemoteService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":core" >
+        </service>
+
+        <activity
+            android:name=".cases.binder.BinderTest"
+            android:label="@string/title_activity_binder_test" >
+        </activity>
+        <activity
+            android:name=".cases.handler.UILooperTest"
+            android:label="@string/title_activity_uilooper_test" >
+        </activity>
+        <activity
+            android:name=".cases.fragment.FragmentAnimationTest"
+            android:label="@string/title_activity_fragment_animation_test" >
+        </activity>
+        <activity
+            android:name=".cases.animation.AnimationSyncTest"
+            android:label="@string/title_activity_animation_sync_test" >
+        </activity>
+        <activity
+            android:name=".cases.view.ViewsTest"
+            android:label="@string/title_activity_views_test" >
+        </activity>
+        <activity
+            android:name=".cases.view.BubbleViewTest"
+            android:label="@string/title_activity_bubble_view_test" >
+        </activity>
+        <activity
+            android:name=".cases.animation.GingerbreadAnimationTest"
+            android:label="@string/title_activity_gingerbread_animation_test" >
+        </activity>
+        <activity
+            android:name=".cases.launch.LaunchTest"
+            android:label="@string/title_activity_launch_test" >
+        </activity>
+        <activity
+            android:name=".cases.launch.AActivity"
+            android:label="AActivity" >
+        </activity>
+        <activity
+            android:name=".cases.launch.BActivity"
+            android:label="BActivity" >
+        </activity>
+        <activity
+            android:name=".cases.launch.CActivity"
+            android:label="CActivity" >
+        </activity>
+        <activity
+            android:name=".cases.fragment.FragmentRequestCodeTest"
+            android:label="@string/title_activity_fragment_request_code_test" >
+        </activity>
+    </application>
+
+</manifest>

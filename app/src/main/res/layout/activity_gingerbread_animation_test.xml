@@ -1,0 +1,54 @@
+<com.netease.lcd.lcdtestcases.widget.HostSlaveLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/host_slave_layout"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/slave_view"
+        android:text="slave view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="#7fa87f"
+        android:gravity="center"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/host_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="host view"
+        />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ani_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ani slave view in"
+            />
+
+        <Button
+            android:id="@+id/ani_out"
+            android:layout_below="@id/ani_in"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ani slave view out"
+            />
+
+    </RelativeLayout>
+
+</com.netease.lcd.lcdtestcases.widget.HostSlaveLayout>

@@ -19,4 +19,6 @@
     <string name="title_activity_launch_test">LaunchTest</string>
     <string name="title_activity_simple_base">SimpleBaseActivity</string>
     <string name="title_activity_fragment_request_code_test">FragmentRequestCodeTest</string>
+    <string name="title_activity_text_view_measure_test">TextViewMeasureTest</string>
+    <string name="title_activity_property_aniamtion_test">PropertyAniamtionTest</string>
 </resources>

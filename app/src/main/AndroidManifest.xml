@@ -3,13 +3,16 @@
     package="com.netease.lcd.lcdtestcases" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"/> -->
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE"/> -->
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/CustomAppTheme" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -91,6 +94,17 @@
         <activity
             android:name=".cases.fragment.FragmentRequestCodeTest"
             android:label="@string/title_activity_fragment_request_code_test" >
+        </activity>
+        <activity
+            android:name=".cases.view.TextViewMeasureTest"
+            android:label="@string/title_activity_text_view_measure_test" >
+        </activity>
+        <activity android:name=".cases.permission.MVersionPermissionTest" >
+        </activity>
+        <activity
+            android:name=".cases.animation.PropertyAnimationTest"
+            android:label="@string/title_activity_property_aniamtion_test"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

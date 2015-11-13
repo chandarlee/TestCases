@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/valueAnimator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ValueAnimator"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/objectAnimator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ObjectAnimator"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/viewPropertyAnimator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewPropertyAnimator"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/aniView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ValueAnimator"
+            android:padding="10dp"
+            android:background="#FF0000"
+            />
+
+
+        <TextView
+            android:id="@+id/aniView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewPropertyAnimator"
+            android:padding="10dp"
+            android:background="#FFFF00"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/aniView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ValueAnimator"
+            android:padding="10dp"
+            android:background="#FF00FF"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

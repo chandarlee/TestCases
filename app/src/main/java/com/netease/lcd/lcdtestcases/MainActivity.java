@@ -18,14 +18,17 @@ import android.widget.TextView;
 import com.netease.lcd.lcdtestcases.cases.ConcurrentTest;
 import com.netease.lcd.lcdtestcases.cases.animation.AnimationSyncTest;
 import com.netease.lcd.lcdtestcases.cases.animation.GingerbreadAnimationTest;
+import com.netease.lcd.lcdtestcases.cases.animation.PropertyAnimationTest;
 import com.netease.lcd.lcdtestcases.cases.binder.BinderTest;
 import com.netease.lcd.lcdtestcases.cases.bitmap.InBitmapTest;
 import com.netease.lcd.lcdtestcases.cases.fragment.FragmentAnimationTest;
 import com.netease.lcd.lcdtestcases.cases.fragment.FragmentRequestCodeTest;
 import com.netease.lcd.lcdtestcases.cases.handler.UILooperTest;
 import com.netease.lcd.lcdtestcases.cases.launch.LaunchTest;
+import com.netease.lcd.lcdtestcases.cases.permission.MVersionPermissionTest;
 import com.netease.lcd.lcdtestcases.cases.service.StopServiceTest;
 import com.netease.lcd.lcdtestcases.cases.view.BubbleViewTest;
+import com.netease.lcd.lcdtestcases.cases.view.TextViewMeasureTest;
 import com.netease.lcd.lcdtestcases.cases.view.ViewsTest;
 
 import java.util.ArrayList;
@@ -79,6 +82,9 @@ public class MainActivity extends ActionBarActivity {
         mCases.add(BubbleViewTest.class);
         mCases.add(GingerbreadAnimationTest.class);
         mCases.add(LaunchTest.class);
+        mCases.add(TextViewMeasureTest.class);
+        mCases.add(MVersionPermissionTest.class);
+        mCases.add(PropertyAnimationTest.class);
     }
 
     private void initListview(){

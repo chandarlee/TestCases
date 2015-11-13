@@ -46,6 +46,8 @@ public class PropertyAnimationTest extends AppCompatActivity implements View.OnC
         }
     }
 
+    //使用ValueAnimator 需要手动更新target的属性，添加AnimatorUpdateListener，
+    //在onAnimationUpdate回调中拿到动画的值并设置属性
     private void inValueAnimator(){
         final View aniView = findViewById(R.id.aniView0);
         final float startX = 0;
@@ -66,6 +68,10 @@ public class PropertyAnimationTest extends AppCompatActivity implements View.OnC
         animator.start();
     }
 
+    //使用ObjectAnimator时指定要操作的属性名称，系统在动画过程中会自动使用反射帮助设置属性值
+    //(对应的属性需要有setXXX方法，如果没有设置初始值，则还需要有getXXX方法)
+    //如果因为target中不存在上面的setXXX或者getXXX方法，动画执行过程中会抛出异常
+    //PropertyValuesHolder允许我们同时对一个target的多种属性进行动画
     private void inObjectAnimator(){
         final View aniView = findViewById(R.id.aniView1);
         final float startX = 0;
@@ -78,6 +84,9 @@ public class PropertyAnimationTest extends AppCompatActivity implements View.OnC
         animator.start();
     }
 
+    // ViewPropertyAnimator 是系统为了方便针对view的多种属性
+    //(包括 x,y,z,alpha,scaleX,scaleY,rotationX,rotationY,translationX,translationY)进行动画而设置的类
+    //相应的在api11之后，view中新增了这些属性对应的set和get方法，更加方便动画的操作
     private void inViewPropertyAnimator(){
         final View aniView = findViewById(R.id.aniView2);
         final float startX = 0;
